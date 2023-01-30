@@ -52,5 +52,8 @@
     "build-npm": "yarn build && rollup -c",
     "test": "ts-node --skip-ignore --project tsconfig.test.json run_tests.ts"
   },
-  "license": "Apache-2.0"
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/speech-commands.min.js",
+  "version": "0.5.4",
+  "browser": { "fs": false, "node-fetch": false, "string_decoder": false, "crypto": false }
 }
